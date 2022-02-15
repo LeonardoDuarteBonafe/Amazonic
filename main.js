@@ -1,5 +1,34 @@
 window.addEventListener("DOMContentLoaded", function () {
 
+    AOS.init();
+    
+    $('.materiais .topbar .menu p').click(function(){
+        var id = $(this).attr('id');
+        var imageUrl = "Images/Materiais/" + id;
+        
+        //mudar
+        //$('.page-empresa .empresa .images .grande div img').attr('src', imageUrl + imageClicadaId + ".webp");
+        
+        $('.materiais .imagens .small').children("img").eq(0).attr('src', imageUrl + "/small1.png");
+        $('.materiais .imagens .small').children("img").eq(1).attr('src', imageUrl + "/small2.png");
+        $('.materiais .imagens .big').children("img").attr('src', imageUrl + "/big.png");
+        
+        
+        $('.materiais .imagens .small').children("img").eq(0).addClass('active-image');
+        $('.materiais .imagens .small').children("img").eq(1).addClass('active-image');
+        $('.materiais .imagens .big').children("img").addClass('active-image');
+        
+        $('.materiais .imagens .small').children("img").eq(0).on("animationend", function(){
+            $(this).removeClass('active-image');
+        }); 
+       $('.materiais .imagens .small').children("img").eq(1).on("animationend", function(){
+            $(this).removeClass('active-image');
+        }); 
+        $('.materiais .imagens .big').children("img").on("animationend", function(){
+            $(this).removeClass('active-image');
+        }); 
+    })
+    
     var language = {
         eng: {
             navbar: {

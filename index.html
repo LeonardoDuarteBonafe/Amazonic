@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="icon" href="Images/Site-Icon/site-icon.webp">
     <title>Amazonic</title>
@@ -39,11 +42,11 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="index.php">MARCEL</a></li>
-                    <li><a href="empresa.php">QUARRY</a></li>
-                    <li><a href="index.php#materiais">ENVIROMENTS</a></li>
-                    <li><a href="index.php#jazidas">SLAB</a></li>
-                    <li><a href="#contato">CONTACT</a></li>
+                    <li><a href="index.html">MARCEL</a></li>
+                    <li><a href="#quarry">QUARRY</a></li>
+                    <li><a href="#enviroments">ENVIROMENTS</a></li>
+                    <li><a href="#slab">SLAB</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
                 <img class="fundo" src="Images/Navbar/folha.PNG">
             </nav>
@@ -76,12 +79,13 @@
             </div>
         </div>
 
-        <div class="our-quarry">
+        <div class="our-quarry" id="quarry">
             <img class="fundo" src="Images/Quarry/fundo.png">
             <div class="bloco">
                 <img src="Images/Quarry/bloco.PNG">
             </div>
-            <div class="info">
+            <div class="info" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
                 <h1>Our Quarry</h1>
                 <p>
                     BILLIONS of years...
@@ -102,24 +106,30 @@
             </div>
             <img class="folha" src="Images/Quarry/folha.PNG">
             <h3 class="top-right-text">AMAZONIC</h3>
-            <h1 class="bottom-center-text">AMAZONIC</h1>
+            <h1 class="bottom-center-text" data-aos="zoom-in" 
+     data-aos-anchor-placement="center-bottom" data-aos-duration="2000">AMAZONIC</h1>
         </div>
 
         <div class="product">
             <img class="fundo" src="Images/Product/fundo.png">
             <h1 class="center-left-text">AMAZONIC</h1>
             <div class="small-image">
-                <img src="Images/Product/imagem1.png">
-                <img src="Images/Product/imagem2.png">
-                <img src="Images/Product/imagem3.png">
-                <img src="Images/Product/imagem4.png">
+                <img data-aos="fade-right" 
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="100" src="Images/Product/imagem1.png">
+                <img data-aos="fade-right" 
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="0" src="Images/Product/imagem2.png">
+                <img data-aos="fade-right" 
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="300" src="Images/Product/imagem3.png">
+                <img data-aos="fade-right" 
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200" src="Images/Product/imagem4.png">
             </div>
-            <div class="banner">
+            <div class="banner" data-aos="fade-left" 
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
                 <img src="Images/Product/banner.PNG">
             </div>
         </div>
 
-        <div class="galeria">
+        <div class="galeria" id="enviroments">
             <div class="banner">
                 <img src="Images/Galeria/imagem1.PNG">
             </div>
@@ -130,7 +140,7 @@
             </div>
         </div>
 
-        <div class="materiais">
+        <div class="materiais" id="slab">
             <img class="fundo" src="Images/Materiais/fundo.png">
             <div class="topbar">
                 <div class="titulo">
@@ -138,26 +148,26 @@
                     <h2>Variations</h2>
                 </div>
                 <div class="menu">
-                    <p>DEEP GREEN</p>
-                    <p>CRYSTAL TIFFANY</p>
-                    <p>BORDEAUX</p>
-                    <p>WAVE</p>
-                    <p>LIGHT GREEN</p>
+                    <p class="active-material" id="deep-green">DEEP GREEN</p>
+                    <p id="crystal-tiffany">CRYSTAL TIFFANY</p>
+                    <p id="bordeaux">BORDEAUX</p>
+                    <p id="wave">WAVE</p>
+                    <p id="light-green">LIGHT GREEN</p>
                 </div>
             </div>
             <div class="imagens">
                 <div class="small">
-                    <img src="Images/Materiais/small1.PNG">
-                    <img src="Images/Materiais/small1.PNG">
+                    <img src="Images/Materiais/deep-green/small1.PNG">
+                    <img src="Images/Materiais/deep-green/small2.PNG">
                 </div>
                 <div class="big">
-                    <img src="Images/Materiais/big.PNG">
+                    <img src="Images/Materiais/deep-green/big.PNG">
                 </div>
             </div>
             <img class="folha" src="Images/Materiais/folha.PNG">
         </div>
 
-        <footer>
+        <footer id="contact">
             <img src="Images/Footer/logo.PNG">
             <img src="Images/Footer/empresa.PNG">
         </footer>
